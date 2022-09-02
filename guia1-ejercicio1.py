@@ -17,4 +17,7 @@ kilogramo = kilogramo * libras #Multpiplico la cantidad de Kg ingresada por 2.2 
 print("Has pasado " + str(usuario) + " Kilogramo que equivale a " + str(kilogramo) + " Libras")
 
 #P R U E B A  D E  E S C R I T O R I O 
-E N
+
+#| Entrada | Salida                |
+#| ---     | ---                   |
+#| 5       | 11                    |
