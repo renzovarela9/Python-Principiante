@@ -2,9 +2,6 @@
 #donde se ingrese por teclado el valor del peso actual.
 
 #Declarar Variables
-from telnetlib import DO
-
-
 DOLAR_US = float()
 pesoArgento = float()
 conversion = float()
