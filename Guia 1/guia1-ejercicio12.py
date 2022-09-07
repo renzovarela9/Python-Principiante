@@ -1,29 +1,161 @@
-#Escribir un programa que pida dos números 
-# y muestre como resultado su división, cociente y resto.
-
-#División con resto. Plantear un algoritmo que permita informar, para dos valores a y b 
-#el resultado de la división a/b y el resto de esa división.
+#Ahorros. Escribir un programa en el cual muestre a fin de año el total de ahorro obtenido,
+#Si se pide en cada mes el 10% del sueldo ganado.
 
 #Declarar Variables
-a = float()
-b = float()
-resultado = float()
+ingreso = int()
+mes = int()
 
 #Inicializar Variables
-a = 0.0
-b = 0.0
-resultado = 0.0
+ingreso = 0
+mes = 0
 
 #Asignar Valores a las Variables
-a = float(input("Ingrese el primer valor dividendo para dividir: "))
-b = float(input("Ingrese el segundo valor divisor para dividir: "))
 
-resultado = a/b
-print("El resultado de la division es: ", resultado)
+#Entrada
+print("Bienvenido Usuario a su registro de ahorros.")
+ingreso = int(input("Ingrese la cantidad que ha ganado en Enero: "))
 
-print("El Cociente y Resto de la division es: ", divmod(a,b)) #usamos la funcion divmod para sacar el cociente y el resto
+#Enero
+if ingreso > 0:
+    mes= ingreso / 10
+else:
+    print("¿Usted no ha ganado nada?")
 
-#P R U E B A  D E  E S C R I T O R I O 
-#| Entrada | Salida                |
-#| ---     | ---                   |
-#|17 / 5   | 3.4, ,3.0, 2.0        |
+#Limpiamos la variable ingreso para el nuevo ingreso de dinero.
+ingreso = 0
+
+#Entrada
+ingreso = int(input("Ingrese la cantidad que ha ganado en Febrero: "))
+
+#Febrero
+if ingreso > 0:
+    mes= mes + (ingreso // 10)
+else:
+    print("¿Usted no ha ganado nada?")
+
+#Limpiamos la variable ingreso para el nuevo ingreso de dinero.
+ingreso = 0
+
+#Entrada
+ingreso = int(input("Ingrese la cantidad que ha ganado en Marzo: "))
+
+#Marzo
+if ingreso > 0:
+    mes= mes + (ingreso // 10)
+else:
+    print("¿Usted no ha ganado nada?")
+
+#Limpiamos la variable ingreso para el nuevo ingreso de dinero.
+ingreso = 0
+
+#Entrada
+ingreso = int(input("Ingrese la cantidad que ha ganado en Abril: "))
+
+#Abril
+if ingreso > 0:
+    mes= mes + (ingreso // 10)
+else:
+    print("¿Usted no ha ganado nada?")
+
+#Limpiamos la variable ingreso para el nuevo ingreso de dinero.
+ingreso = 0
+
+#Entrada
+ingreso = int(input("Ingrese la cantidad que ha ganado en Mayo: "))
+
+#Mayo
+if ingreso > 0:
+    mes= mes + (ingreso // 10)
+else:
+    print("¿Usted no ha ganado nada?")
+
+#Limpiamos la variable ingreso para el nuevo ingreso de dinero.
+ingreso = 0
+
+#Entrada
+ingreso = int(input("Ingrese la cantidad que ha ganado en Junio: "))
+
+#Junio
+if ingreso > 0:
+    mes= mes + (ingreso // 10)
+else:
+    print("¿Usted no ha ganado nada?")
+
+#Limpiamos la variable ingreso para el nuevo ingreso de dinero.
+ingreso = 0
+
+#Entrada
+ingreso = int(input("Ingrese la cantidad que ha ganado en Julio: "))
+
+#Julio
+if ingreso > 0:
+    mes= mes + (ingreso // 10)
+else:
+    print("¿Usted no ha ganado nada?")
+
+#Limpiamos la variable ingreso para el nuevo ingreso de dinero.
+ingreso = 0
+
+#Entrada
+ingreso = int(input("Ingrese la cantidad que ha ganado en Agosto: "))
+
+#Agosto
+if ingreso > 0:
+    mes= mes + (ingreso // 10)
+else:
+    print("¿Usted no ha ganado nada?")
+
+#Limpiamos la variable ingreso para el nuevo ingreso de dinero.
+ingreso = 0
+
+#Entrada
+ingreso = int(input("Ingrese la cantidad que ha ganado en Septiembre: "))
+
+#Septiembre
+if ingreso > 0:
+    mes= mes + (ingreso // 10)
+else:
+    print("¿Usted no ha ganado nada?")
+
+#Limpiamos la variable ingreso para el nuevo ingreso de dinero.
+ingreso = 0
+
+#Entrada
+ingreso = int(input("Ingrese la cantidad que ha ganado en Octubre: "))
+
+#Ocutubre
+if ingreso > 0:
+    mes= mes + (ingreso // 10)
+else:
+    print("¿Usted no ha ganado nada?")
+
+#Limpiamos la variable ingreso para el nuevo ingreso de dinero.
+ingreso = 0
+
+#Entrada
+ingreso = int(input("Ingrese la cantidad que ha ganado en Noviembre: "))
+
+#Noviembre
+if ingreso > 0:
+    mes= mes + (ingreso // 10)
+else:
+    print("¿Usted no ha ganado nada?")
+
+#Limpiamos la variable ingreso para el nuevo ingreso de dinero.
+ingreso = 0
+
+#Entrada
+ingreso = int(input("Ingrese la cantidad que ha ganado en Diciembre: "))
+
+#Diciembre
+if ingreso > 0:
+    mes= mes + (ingreso // 10)
+else:
+    print("¿Usted no ha ganado nada?")
+
+print("De tus ingresos el 10% (fue ahorrado) El monto ahorrado en todo el año es:", mes)
+
+
+
+
+

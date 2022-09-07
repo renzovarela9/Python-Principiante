@@ -1,29 +1,24 @@
-#Cuadrado de un binomio. Plantear un script directamente en el shell de Python, 
-#que permita mostrar, para dos valores 𝑎 y 𝑏, que: Un binomio al cuadrado (suma) es igual al cuadrado del primer término, más el doble producto del primero por el segundo más el cuadrado del segundo.
+#Área de un triángulo. Desarrolle un programa para calcular el área de un triángulo, 
+#cargando por teclado el valor de la base, pero sabiendo que su altura es igual al cuadrado de la base.
 
 #Declarar Variables
-a = int()
-b = int()
-binomio = int()
-resultado = int()
-
+area = float()
+base = float()
+altura = float()
 
 #Inicializar Variables
-a = 0
-b = 0
-binomio = 0
-resultado = 0
+area = 0.0
+base= 0.0
+altura = 0.0
 
 #Asignar Valores a las Variables
-a = int(input("Ingrese un valor numerico: "))
-b = int(input("Ingrese otro valor numerico: "))
-binomio = (a + b)**2
-resultado = binomio = a ** 2 + 2 * ((a)*(b)) + b ** 2
+base = float(input("Ingrese el valor de la base: "))
+altura = base
+area = (base * altura ** 2)/2
 
-print(resultado)
-
+print("El área de su triangulo es: ", area)
 
 #P R U E B A  D E  E S C R I T O R I O 
 #| Entrada | Salida                |
 #| ---     | ---                   |
-#| 5, 3    | 64                    |
+#|3        | 13.5                  |

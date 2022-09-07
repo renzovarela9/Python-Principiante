@@ -1,147 +1,43 @@
-#Multiplicación. Ingresar un número cualquiera por teclado 
-# y que muestre su respectiva tabla del 1 al 10.
+#Crear un conversor de dólares a pesos y pesos a dólares, 
+#donde se ingrese por teclado el valor del peso actual.
 
 #Declarar Variables
-num= int()
+DOLAR_US = float()
+pesoArgento = float()
+conversion = float()
+opcion = int()
 
 #Inicializar Variables
-num = int(input("Ingrese un numero del 1 al 10 para mostrarle cuya tabla: "))
+DOLAR_US = 139.16 
+pesoArgento = 0.0
+conversion = 0.0
+opcion = 0
+
 
 #Asignar Valores a las Variables
-if  num == 1:
-    print(num, " x 1 = ", num*1)
-    print(num, " x 2 = ", num*2)
-    print(num, " x 3 = ", num*3)
-    print(num, " x 4 = ", num*4)
-    print(num, " x 5 = ", num*5)
-    print(num, " x 6 = ", num*6)
-    print(num, " x 7 = ", num*7) 
-    print(num, " x 8 = ", num*8)
-    print(num, " x 9 = ", num*9)
-    print(num, " x 10 = ", num*10)
+
+print("Bienvenido al conversor de dinero, 1 DOLAR ESTADOUNIDENCE: $139.16 PESO ARGENTINO ")
+print("1. Dolar a Peso Argentino")
+print("2. Peso Argentino a Dolar")
+opcion = int(input("Eliga una opcion: "))
+
+if (opcion <= 0)or(opcion >=3):
+    print("Error- vuelva a ingresar de nuevo")
+
+if opcion == 1:
+    pesoArgento = float(input("Ingrese la cantidad de dolares que desea convertir: "))
+    conversion = pesoArgento* DOLAR_US
+    print("Ha convertido", pesoArgento, " dolares por ", conversion, " Peso Argentino")
 else:
-    if num == 2:
-        print(num, " x 1 = ", num*1)
-        print(num, " x 2 = ", num*2)
-        print(num, " x 3 = ", num*3)
-        print(num, " x 4 = ", num*4)
-        print(num, " x 5 = ", num*5)
-        print(num, " x 6 = ", num*6)
-        print(num, " x 7 = ", num*7) 
-        print(num, " x 8 = ", num*8)
-        print(num, " x 9 = ", num*9)
-        print(num, " x 10 = ", num*10)
-    else:
-        if num == 3:
-            print(num, " x 1 = ", num*1)
-            print(num, " x 2 = ", num*2)
-            print(num, " x 3 = ", num*3)
-            print(num, " x 4 = ", num*4)
-            print(num, " x 5 = ", num*5)
-            print(num, " x 6 = ", num*6)
-            print(num, " x 7 = ", num*7) 
-            print(num, " x 8 = ", num*8)
-            print(num, " x 9 = ", num*9)
-            print(num, " x 10 = ", num*10)
-        else:
-           if num == 4:
-            print(num, " x 1 = ", num*1)
-            print(num, " x 2 = ", num*2)
-            print(num, " x 3 = ", num*3)
-            print(num, " x 4 = ", num*4)
-            print(num, " x 5 = ", num*5)
-            print(num, " x 6 = ", num*6)
-            print(num, " x 7 = ", num*7) 
-            print(num, " x 8 = ", num*8)
-            print(num, " x 9 = ", num*9)
-            print(num, " x 10 = ", num*10)
-           else:
-            if num == 5:
-                print(num, " x 1 = ", num*1)
-                print(num, " x 2 = ", num*2)
-                print(num, " x 3 = ", num*3)
-                print(num, " x 4 = ", num*4)
-                print(num, " x 5 = ", num*5)
-                print(num, " x 6 = ", num*6)
-                print(num, " x 7 = ", num*7) 
-                print(num, " x 8 = ", num*8)
-                print(num, " x 9 = ", num*9)
-                print(num, " x 10 = ", num*10)
-            else:
-                if num == 6:
-                    print(num, " x 1 = ", num*1)
-                    print(num, " x 2 = ", num*2)
-                    print(num, " x 3 = ", num*3)
-                    print(num, " x 4 = ", num*4)
-                    print(num, " x 5 = ", num*5)
-                    print(num, " x 6 = ", num*6)
-                    print(num, " x 7 = ", num*7) 
-                    print(num, " x 8 = ", num*8)
-                    print(num, " x 9 = ", num*9)
-                    print(num, " x 10 = ", num*10)
-                else:
-                    if num == 7:
-                        print(num, " x 1 = ", num*1)
-                        print(num, " x 2 = ", num*2)
-                        print(num, " x 3 = ", num*3)
-                        print(num, " x 4 = ", num*4)
-                        print(num, " x 5 = ", num*5)
-                        print(num, " x 6 = ", num*6)
-                        print(num, " x 7 = ", num*7) 
-                        print(num, " x 8 = ", num*8)
-                        print(num, " x 9 = ", num*9)
-                        print(num, " x 10 = ", num*10)
-                    else:
-                        if num == 8:
-                            print(num, " x 1 = ", num*1)
-                            print(num, " x 2 = ", num*2)
-                            print(num, " x 3 = ", num*3)
-                            print(num, " x 4 = ", num*4)
-                            print(num, " x 5 = ", num*5)
-                            print(num, " x 6 = ", num*6)
-                            print(num, " x 7 = ", num*7) 
-                            print(num, " x 8 = ", num*8)
-                            print(num, " x 9 = ", num*9)
-                            print(num, " x 10 = ", num*10)
-                        else:
-                            if num == 9:
-                                print(num, " x 1 = ", num*1)
-                                print(num, " x 2 = ", num*2)
-                                print(num, " x 3 = ", num*3)
-                                print(num, " x 4 = ", num*4)
-                                print(num, " x 5 = ", num*5)
-                                print(num, " x 6 = ", num*6)
-                                print(num, " x 7 = ", num*7) 
-                                print(num, " x 8 = ", num*8)
-                                print(num, " x 9 = ", num*9)
-                                print(num, " x 10 = ", num*10)
-                            else:
-                                if num == 10:
-                                    print(num, " x 1 = ", num*1)
-                                    print(num, " x 2 = ", num*2)
-                                    print(num, " x 3 = ", num*3)
-                                    print(num, " x 4 = ", num*4)
-                                    print(num, " x 5 = ", num*5)
-                                    print(num, " x 6 = ", num*6)
-                                    print(num, " x 7 = ", num*7) 
-                                    print(num, " x 8 = ", num*8)
-                                    print(num, " x 9 = ", num*9)
-                                    print(num, " x 10 = ", num*10)
+    if opcion == 2:
+        pesoArgento = float(input("Ingrese la cantidad de pesos que desea convertir: "))
+        conversion = ((pesoArgento* DOLAR_US) / DOLAR_US)/DOLAR_US
+        print("Ha convertido", pesoArgento, " pesos argentinos por ", conversion, " dolares")
 
 
-#P R U E B A  D E  E S C R I T O R I O 
-#| Entrada| Salida      |
-#| ---    | ---         |
-#| 5      |             |
-#| -----  |             |
-         #|5  x 1 =  5  |
-         #|5  x 2 =  10 |
-         #|5  x 3 =  15 |
-         #|5  x 4 =  20 |
-         #|5  x 5 =  25 |
-         #|5  x 6 =  30 |
-         #|5  x 7 =  35 |
-         #|5  x 8 =  40 |
-         #|5  x 9 =  45 |
-         #|5  x 10 =  50|
+
+#   P R U E B A  D E  E S C R I T O R I O 
+#| Entrada          | Salida                |
+#| ---              | ---                   |
+#|opcion 2: 87 ARS  |  0.62 US              |
 
