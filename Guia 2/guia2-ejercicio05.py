@@ -13,14 +13,16 @@ i = str()
 incrementador = int()
 contador = int()
 contador2 = int()
+palabralarga = int()
 porcentaje = float()
 #Inicializar/limpiar Variables
 usuario = ""
 subusuario = ""
 i = "" #Iteracion
-incrementador = 0
+incrementador = 0 #Cuenta y la posicion de cada letra
 contador = 0
 contador2 = 0
+palabralarga = 0
 porcentaje = 0.0
 
 #Asignar Valores a las Variables
@@ -30,7 +32,7 @@ usuario = input("¿Cual es tu nombre?: ")
 usuario = usuario.lower()
 usuario = usuario.strip(" ") # Borramos los espacios al inicio y final
 for i in usuario:
-    #CONTADOR DE VOCALES
+    #CONTADOR DE VOCALES #RESPUESTA A
     if i in "aeiouáéíóú":
         contador = contador+1
     
@@ -41,17 +43,22 @@ for i in usuario:
     if i in " ":
         print("el espacio esta la casilla: ", incrementador)
         contador2 = contador2 +1 
-       # subusuario = contador2 - incrementador
+        
+        if i == " ":
+            subusuario = usuario[0 : incrementador]
+            
+            print("El recorte dice: ",subusuario)
+
         #print("prueba sobre palabra mas larga",subusuario)
+    
 
 
 
 
+print("La cantidad de vocales usadas son: ", contador) #RESPUESTA A
 
-print("La cantidad de vocales usadas son: ", contador)
 
-print(usuario)
-#PORCENTAJE DE VOCALES   
+#PORCENTAJE DE VOCALES   #RESPUESTA B
 porcentaje = ( contador * 100)
 porcentaje = porcentaje / len(usuario) 
 print("El resultado de vocales usadas en la frase es de: ", porcentaje,"%")
@@ -62,5 +69,3 @@ print("El resultado de vocales usadas en la frase es de: ", porcentaje,"%")
 print("La cantidad de espacio que hay son: ", contador2)
 
 
-#subusuario = usuario[0 : 3]
-#print(usuario)
