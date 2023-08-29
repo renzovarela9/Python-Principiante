@@ -4,17 +4,15 @@
 
 #Declaración e inicializacón de Variables
 kilogramo = 0.0
-libras = 2.2
-usuario = 0.0
+libras = 0.0
 
 #Hago que el usuario ingrese el valor a pasar
-usuario = float(input("Ingrese el valor para pasar de Kilo gramos a Libras: "))
+kilogramo = float(input("Ingrese el valor para pasar de Kilo gramos a Libras: "))
 
 #igualo las variables para que se realice la conversion
-kilogramo = usuario
-kilogramo = kilogramo * libras #Multpiplico la cantidad de Kg ingresada por 2.2 libras
+libras = kilogramo * 2.2 #Multpiplico la cantidad de Kg ingresada por 2.2 libras
 
-print("Has pasado " + str(usuario) + " Kilogramo que equivale a " + str(kilogramo) + " Libras")
+print("Has pasado " + str(kilogramo) + " Kilogramo que equivale a " + str(libras) + " Libras")
 
 #P R U E B A  D E  E S C R I T O R I O 
 

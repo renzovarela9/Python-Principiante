@@ -8,7 +8,7 @@ conversion = float()
 opcion = int()
 
 #Inicializar Variables
-DOLAR_US = 139.16 
+DOLAR_US = 600.0 
 pesoArgento = 0.0
 conversion = 0.0
 opcion = 0
@@ -16,7 +16,7 @@ opcion = 0
 
 #Asignar Valores a las Variables
 
-print("Bienvenido al conversor de dinero, 1 DOLAR ESTADOUNIDENCE: $139.16 PESO ARGENTINO ")
+print("Bienvenido al conversor de dinero, 1 DOLAR ESTADOUNIDENCE: $600.0 PESO ARGENTINO ")
 print("1. Dolar a Peso Argentino")
 print("2. Peso Argentino a Dolar")
 opcion = int(input("Eliga una opcion: "))
@@ -39,5 +39,5 @@ else:
 #   P R U E B A  D E  E S C R I T O R I O 
 #| Entrada          | Salida                |
 #| ---              | ---                   |
-#|opcion 2: 87 ARS  |  0.62 US              |
+#|opcion 2: 300 ARS  |  0.50 US             |
 

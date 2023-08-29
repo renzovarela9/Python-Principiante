@@ -1,0 +1,46 @@
+Sobre la carpeta que tengamos 
+
+hacemos:
+// nos va a mostrar los archivos no subidos al repo
+
+$ git status 
+
+//luego add y el nombre del archivo... o git add . para agregar todos los archivos
+
+
+$ git add Ejrcicio12.java
+
+//agregar mas de un archivo
+
+
+$ git add .
+
+//podemos poner git status para ver si el archivo se subio
+
+$ git status
+
+//Luego ponemos un commit con un mensaje para cofirmar la subida del archivo
+
+
+$ git commt -m "commit 1"
+
+//Una vez agragado el archivo utilizamos push para pasar el repo remoto
+//la rama master
+
+
+$ git push -u origin master 
+
+
+
+--------------
+
+//para clonar un repo remoto al local 
+utilizamos clone y la url del repo
+
+
+$ git clone https://github.com/renzovarela9/Python-Principiante.git
+
+
+//para solamente clonar un archivo usamos pull, esto quiere decir que si al repo hay un archivo que no esta local lo podemos traer
+
+$ git pull origin master
